@@ -23,11 +23,11 @@ public class ATM {
 		System.out.println("***********************************************************************");
 		System.out.println("Information about " + georgeAcc.getName() + "'s account:");
 		System.out.println("***********************************************************************");
-		
+
+		System.out.println("Interest rate: " + georgeAcc.getAnnualInterestRate());
 		for (Transaction t : georgeAcc.getTransactions()) {
-			System.out.println("Interest rate: " + georgeAcc.getAnnualInterestRate());
 			System.out.println("Balance: " + t.getBalance());
-			System.out.println("Transaction: " + t.getDescription() + " in " + t.getDate() + ".");
+			System.out.println("Transaction: " + t.getDescription() + " of " + t.getAmount() + " in " + t.getDate() + ".");
 		}	
 		
 	}

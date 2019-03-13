@@ -13,11 +13,12 @@ public class Transaction {
 	public Transaction(){};
 	
 	// Construct a Transaction with the specified date, type, balance, and description
-	public Transaction(Date date, char type, double balance, String description) {
+	public Transaction(Date date, char type, double balance, String description, double amount) {
 		this.date = date;
 		this.type = type;
 		this.balance = balance;
 		this.description = description;
+		this.amount = amount;
 	}
 	
 	// Getters and setters
